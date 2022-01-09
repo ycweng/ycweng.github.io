@@ -1,0 +1,6 @@
+copyright: © 2022 Copyright.
+description: my profoli & tech note
+
+customMenus:
+- name: tool
+  url: /bingo/index.html
