@@ -22,12 +22,11 @@ jobs:
           extended: true
 
       - name: Build
-        run: hugo --minify
+        run: hugo --minify --gc --cleanDestinationDir
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
-          external_repository: ycweng/ycweng.github.io
-          github_token: ${{ secrets.PAGE_TOKEN }}
-          publish_branch: gh-pages # if your main branch is `master` use that here.
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: master # if your main branch is `master` use that here.
           publish_dir: ./public
