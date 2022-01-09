@@ -33,7 +33,6 @@ enableEmoji: true
 params:
   # GitHub repo URL and branch of your site
   gitRepo: https://github.com/ycweng/ycweng.github.io
-  gitBranch: main
 
   logo:
     main: images/helmet.jpg
